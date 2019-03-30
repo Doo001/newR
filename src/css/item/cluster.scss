@@ -1,0 +1,13 @@
+#item-cluster-view {
+    padding:16px 20px;
+    .item-display {
+        &.item-deleted {
+            opacity: .3;
+        }
+
+        &.current {
+            border-left: 5px solid #4d77ee;
+            padding-left: 5px;
+        }
+    }
+}

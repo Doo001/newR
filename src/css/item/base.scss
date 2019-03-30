@@ -1,0 +1,237 @@
+/* 题目基础样式，各模块自定义样式放到自己的scss里 */
+
+q, stem, subqs, subq, opts {
+    display: block;
+}
+
+opt, nn, nng, wn, lwn, rwn, un, sn {
+    display: inline-block;
+}
+
+q {
+    font-size: 16px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #000;
+    line-height: 1.5;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    display: none;
+}
+
+subq {
+    margin-bottom: 5px;
+}
+
+opt {
+    font-weight: normal;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+nn {
+    font-weight: bold;
+    padding: 0 5px;
+    border-bottom: 1px solid #555;
+    margin: 0 2px;
+    line-height: 11px;
+    min-width: 50px;
+}
+
+nng {
+    font-weight: bold;
+    padding: 0 5px;
+    border-bottom: 1px solid #555;
+}
+
+un {
+    font-weight: bold;
+    border-bottom: 1px solid #555;
+}
+
+wn, rwn, lwn {
+    text-align: center;
+    border-bottom: 1px solid #555;
+    line-height: 11px;
+}
+
+wn {
+    padding: 0 25px;
+    line-height: 15px;
+}
+
+rwn, lwn {
+    line-height: 25px;
+}
+
+rwn {
+    float: right;
+    height: 27px;
+    clear: both;
+    border-bottom: 0px;
+    text-align: right;
+}
+
+lwn {
+    height: 27px;
+    border-bottom: 0px;
+    text-align: left;
+}
+
+rwn>nn {
+    border-bottom: 1px solid #555;
+}
+
+lwn>nn {
+    border-bottom: 1px solid #555;
+}
+
+sn {
+    height: 27px;
+}
+
+q ol {
+    margin: 0;
+    padding-left: 1.5em;
+}
+
+q ul {
+    margin: 0 0 0 0px;
+}
+
+opt.col-xs-3,
+opt.col-xs-6,
+opt.col-xs-12 {
+    // override bootstrap
+    padding-left: 0;
+    padding-right: 0; 
+}
+
+opt.col-xs-3 {
+    width: 25%;
+    float: none;
+}
+
+opt.col-xs-6 {
+    width: 50%;
+    float: none;
+}
+
+opt.col-xs-12 {
+    width: 100%;
+    float: none;
+}
+
+.without-auxiliary .auxiliary {
+    display: none;
+}
+
+.auxiliary .difficulty, 
+.auxiliary .tagging,
+//.auxiliary .answer,
+.auxiliary .ans,
+.auxiliary .exp,
+.auxiliary .step {
+    display: flex;
+}
+
+.auxiliary .dt {
+    flex: 0 0 auto;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 5px 0;
+    color: #08b5c9;
+}
+
+.auxiliary .dd {
+    flex: 1 1 auto;
+    padding: 5px;
+}
+
+wiki {
+    display: inline-block;
+    color: #080;
+    cursor: pointer;
+}
+
+.img-responsive {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+opt .img-responsive {
+    vertical-align: top;
+    display: inline;
+    margin: initial;
+}
+
+.ktags {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ktag {
+
+    .ktag-path {
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    .ktag-id {
+        color: #c3c3c3;
+    }
+
+    &.primary {
+        color: #42a904;
+    }
+
+    &.sub {
+        color: #62c924;
+    }
+
+    .ktag-sep {
+        margin: auto .5em;
+    }
+}
+
+.article-container {
+    .ktag {
+        &.primary {
+            color: #ffa500;
+        }
+
+        &.sub {
+            color: #fbc155;
+        }
+    }
+}
+
+.item-display {
+    position: relative;
+
+    q {
+        margin-right: 3em;
+        max-width: 989px;  /* same as a4 print */
+    }
+
+    .general-info {
+        margin-bottom: .5em;
+    }
+
+    &.without-auxiliary .general-info {
+        display: none;
+    }
+
+    .auxiliary-toggler {
+        position: absolute;
+        top: .4em;
+        right: .6em;
+
+        @media print {
+            display: none;
+        }
+    }
+}

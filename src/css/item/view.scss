@@ -1,0 +1,20 @@
+#item-view {
+    display: flex;
+    padding: 16px 20px;
+    .item-display-wrapper {
+        flex: 1 1 50%;
+        margin-right: 2em;
+    }
+
+    .item-info {
+        flex: 1 1 50%;
+
+        .btn {
+            min-width: 4em;
+        }
+    }
+
+    hr {
+        border-color: #ccc;
+    }
+}

@@ -1,0 +1,132 @@
+/* icons */
+
+%kcode-editor-bg-img {
+    background-image: url("../img/kcode_editor/editor.png") !important;
+    width: 27px;
+    height: 27px;
+}
+
+.ke-icon-opts {
+    @extend %kcode-editor-bg-img;
+    background-position: 0px 0px;
+}
+
+.ke-icon-nn {
+    @extend %kcode-editor-bg-img;
+    background-position: -432px 0px;
+}
+
+.ke-icon-wn {
+    @extend %kcode-editor-bg-img;
+    background-position: -405px 0px;
+}
+
+.ke-icon-lwn {
+    @extend %kcode-editor-bg-img;
+    background-position: -324px 0px;
+}
+
+.ke-icon-rwn {
+    @extend %kcode-editor-bg-img;
+    background-position: -378px 0px;
+}
+
+.ke-icon-sn {
+    @extend %kcode-editor-bg-img;
+    background-position: -351px 0px;
+}
+
+.ke-icon-period {
+    @extend %kcode-editor-bg-img;
+    background-position: -54px 0px;
+}
+
+.ke-icon-comma {
+    @extend %kcode-editor-bg-img;
+    background-position: -27px 0px;
+}
+
+.ke-icon-chinesecomma {
+    @extend %kcode-editor-bg-img;
+    background-position: -81px 0px;
+}
+
+.ke-icon-colon {
+    @extend %kcode-editor-bg-img;
+    background-position: -216px 0px;
+}
+
+.ke-icon-semicolon {
+    @extend %kcode-editor-bg-img;
+    background-position: -135px 0px;
+}
+
+.ke-icon-parethesis {
+    @extend %kcode-editor-bg-img;
+    background-position: -108px 0px;
+}
+
+.ke-icon-mathbf {
+    @extend %kcode-editor-bg-img;
+    background-position: -189px 0px;
+}
+
+.ke-icon-mathrm {
+    @extend %kcode-editor-bg-img;
+    background-position: -162px 0px;
+}
+
+.ke-icon-inlineequation {
+    @extend %kcode-editor-bg-img;
+    background-position: -243px 0px;
+}
+
+.ke-icon-multilineequation {
+    @extend %kcode-editor-bg-img;
+    background-position: -270px 0px;
+}
+
+.ke-icon-split {
+    @extend %kcode-editor-bg-img;
+    background-position: -297px 0px;
+}
+
+.ke-icon-cases {
+    @extend %kcode-editor-bg-img;
+    background-position: -459px 0px;
+}
+
+.ke-icon-because {
+    @extend %kcode-editor-bg-img;
+    background-position: -486px 0px;
+}
+
+.ke-icon-therefore {
+    @extend %kcode-editor-bg-img;
+    background-position: -513px 0px;
+}
+
+.ke-icon-circlenum {
+    @extend %kcode-editor-bg-img;
+    background-position: -540px 0px;
+}
+
+.ke-icon-addshu {
+    background-image: url("img/kcode_editor/shu.jpg") !important;
+    background-position: 0px 0px;
+    width: 27px;
+    height: 27px;
+}
+
+.ke-icon-wiki {
+    background-image: url("img/kcode_editor/wiki.png") !important;
+    width: 27px;
+    height: 27px;
+}
+
+.ke-icon-image {
+    @extend %kcode-editor-bg-img;
+    background-position: -567px 0px !important;
+    width: 27px !important;
+    height: 27px !important;
+}

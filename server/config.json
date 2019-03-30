@@ -1,0 +1,34 @@
+{
+  "SITE_TITLE": "优能中学",
+  "HOST": "0.0.0.0:5200",
+  "SEND_FILE_MAX_AGE_DEFAULT": 0,
+  "CDN_DOMAIN": "sealimg.youneng.com",
+  "SECRET_KEY": "Fqtt1LcUz8bkDVKH0CO+b91EvtH60E7vweYGGN4PgxE=",
+  "SUBJECT": "math",
+
+  "ITEM_SEARCH_ENGINE": "http://10.15.4.216:7101",
+
+  "DATA_IMG_PREFIX": "http://sealdata.youneng.com/img/",
+  "DATA_IMG_STORE_PATH": "/mnt/gfsdir/VPSDTQ-P4/seal/images/omega",
+  "DATA_PDF_PREFIX": "http://sealdata.youneng.com/pdf/",
+  "DATA_PDF_STORE_PATH": "/mnt/gfsdir/VPSDTQ-P4/seal/images/pdf",
+  "DATA_DOC_PREFIX": "http://sealdata.youneng.com/doc/",
+  "DATA_DOC_STORE_PATH": "/mnt/gfsdir/VPSDTQ-P4/seal/images/doc",
+
+  "MONGOALCHEMY_DATABASE": "quantum_english",
+  "MONGOALCHEMY_SERVER": "127.0.0.1",
+  "MONGOALCHEMY_REPLICA_SET": "rs",
+  "MONGOALCHEMY_SAFE_SESSION": true,
+
+  "ERROR_ALERT_ENABLED": false,
+  "SENTRY_DSN": "http://5314ff46f4f24b2b947f739abcc4404a:58bf505fdb454b35ba222bcc64ef97b8@sentry.photonmath.com/28",
+  "SENTRY_PUBLIC_DSN": "http://5314ff46f4f24b2b947f739abcc4404a@sentry.photonmath.com/28",
+
+  "BROKER_URL": "redis://localhost:6379/5",
+  "REDIS_HOST": "127.0.0.1",
+  "REDIS_DB": 1,
+  "CELERY_TASK_SERIALIZER": "pickle",
+  "CELERY_ACCEPT_CONTENT": ["pickle"],
+  "CELERYD_TASK_TIME_LIMIT": 90,
+  "CELERYD_TASK_SOFT_TIME_LIMIT": 60
+}

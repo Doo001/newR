@@ -1,0 +1,218 @@
+.ke-content {
+    font-size: 18px;
+    font-family: 'Microsoft YaHei UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    white-space: pre-wrap;
+
+    .tooltip-inner {
+        max-width: 400px;
+    }
+
+    .container-fluid {
+        padding-right: 15px;
+        padding-left: 0px !important;
+        .navbar-header{
+            width:200px;
+            height:60px;
+            background:rgba(255,211,67,1);
+        }
+    }
+
+    .content {
+        min-height: 580px;
+    }
+
+    .question {
+        padding: 20px 0;
+        margin-bottom: 25px;
+        overflow: hidden;
+    }
+
+    stem {
+        line-height: 30px;
+        padding: 0 5px 10px;
+        display: block;
+        margin-bottom: 15px;
+        background-color: #dfd;
+    }
+
+    q {
+        display: block;
+        line-height: 30px;
+
+        &:before, &:after {
+            content: "";
+            display: none;
+        }
+    }
+
+
+    opts {
+        border-left-width: 8px;
+        padding: 0 5px 10px;
+        border: 1px solid #ddd;
+        border-width: 1px;
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    q > p {
+        margin-left: 5px;
+    }
+
+    subqs {
+        display: block;
+        margin-top: 0px;
+    }
+
+    subqs li {
+        line-height: 25px;
+    }
+
+    subq {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0 15px 0;
+        width: 100%;
+    }
+
+    opt {
+        font-weight: normal;
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: #ddf;
+        padding: 0;
+        float: none;
+    }
+
+    cn {
+        text-align: center;
+        display: block;
+    }
+
+    sign {
+        padding-left: 75%;
+        text-align: left;
+        display: block;
+    }
+
+    nn, nng {
+        font-weight: bold;
+        display: inline-block;
+        width: 50px;
+        line-height: 1em;
+    }
+
+    nn {
+        border-bottom: 3px solid blue;
+    }
+
+    nng {
+        border-bottom: 3px solid red;
+    }
+
+    un {
+        font-weight: bold;
+        border-bottom: 3px solid green;
+    }
+
+    wn, rwn, lwn {
+        color: #c0c;
+        padding: 0;
+        text-align: center;
+        display: inline-block;
+        border-bottom: 3px solid #c0c;
+    }
+
+    wn {
+        padding: 0 25px;
+    }
+
+    rwn {
+        float: right;
+        height: 27px;
+        clear: both;
+        color: #005306;
+        border-bottom: 0px;
+        text-align: right;
+    }
+
+    lwn {
+        height: 27px;
+        color: #8416eb;
+        border-bottom: 0px;
+        text-align: left;
+    }
+
+    rwn>nn {
+        border-bottom: 3px solid #005306;
+    }
+
+    lwn>nn {
+        border-bottom: 3px solid #8416eb;
+    }
+
+    sn {
+        height: 27px;
+        color: #ff6804;
+        text-align: left;
+    }
+
+    wiki {
+        display: inline-block;
+        color: #080;
+        cursor: pointer;
+    }
+
+    .inline {
+        display: inline-block;
+    }
+
+    .form-inline .form-group {
+        display: inline-block;
+        margin-right: 30px;
+    }
+
+    .list-box {
+        width: 500px;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .answer p {
+        background-color: #dfd;
+    }
+
+    .exp p {
+        background-color: #dfd;
+    }
+
+    img.img-responsive {
+        border: dashed 1px red;
+        display: inline-block;
+        max-width: 100%;
+    }
+
+    .hiddenqs {
+        display: block;
+    }
+
+    .hiddenopts {
+        display: block;
+    }
+
+    .ke-dialog-default.ke-dialog {
+        top: 25% !important;
+    }
+
+    .tex-open, .tex-close {
+        color: red;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .tex-text {
+        color: blue;
+        text-decoration: underline;
+    }
+}

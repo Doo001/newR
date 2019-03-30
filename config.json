@@ -1,0 +1,189 @@
+{
+  "development": {
+    "local": {
+      "math": {
+        "port": 3000,
+        "host": "math.core.xdf.cn"
+      },
+      "english": {
+        "host": "english.core.xdf.cn",
+        "port": 3001
+      },
+      "physics": {
+        "host": "physics.core.xdf.cn",
+        "port": 3002
+      },
+      "chemistry": {
+        "host": "chemistry.core.xdf.cn",
+        "port": 3003
+      },
+      "biology": {
+        "host": "biology.core.xdf.cn",
+        "port": 3004
+      },
+      "geography": {
+        "host": "geography.core.xdf.cn",
+        "port": 3005
+      },
+      "polity": {
+        "host": "politics.core.xdf.cn",
+        "port": 3006
+      },
+      "chinese": {
+        "host": "chinese.core.xdf.cn",
+        "port": 3007
+      },
+      "history": {
+        "host": "history.core.xdf.cn",
+        "port": 3008
+      }
+    },
+    "proxy": {
+      "math": {
+        "port": 80,
+        "host": "shuxue.core.xdf.cn"
+      },
+      "english": {
+        "host": "yingyu.core.xdf.cn",
+        "port": 80
+      },
+      "physics": {
+        "host": "wuli.core.xdf.cn",
+        "port": 80
+      },
+      "chemistry": {
+        "host": "huaxue.core.xdf.cn",
+        "port": 80
+      },
+      "biology": {
+        "host": "shengwu.core.xdf.cn",
+        "port": 80
+      },
+      "geography": {
+        "host": "dili.core.xdf.cn",
+        "port": 80
+      },
+      "polity": {
+        "host": "zhengzhi.core.xdf.cn",
+        "port": 80
+      },
+      "chinese": {
+        "host": "yuwen.core.xdf.cn",
+        "port": 80
+      },
+      "history": {
+        "host": "lishi.core.xdf.cn",
+        "port": 80
+      }
+    }
+  },
+  "production": {
+    "local": {
+      "math": {
+        "port": 3000,
+        "host": "math.core.xdf.cn"
+      },
+      "english": {
+        "host": "english.core.xdf.cn",
+        "port": 3001
+      },
+      "physics": {
+        "host": "physics.core.xdf.cn",
+        "port": 3002
+      },
+      "chemistry": {
+        "host": "chemistry.core.xdf.cn",
+        "port": 3003
+      },
+      "biology": {
+        "host": "biology.core.xdf.cn",
+        "port": 3004
+      },
+      "geography": {
+        "host": "geography.core.xdf.cn",
+        "port": 3005
+      },
+      "polity": {
+        "host": "politics.core.xdf.cn",
+        "port": 3006
+      },
+      "chinese": {
+        "host": "chinese.core.xdf.cn",
+        "port": 3007
+      },
+      "history": {
+        "host": "history.core.xdf.cn",
+        "port": 3008
+      }
+    },
+    "proxy": {
+      "math": {
+        "port": 80,
+        "host": "shuxue.core.xdf.cn"
+      },
+      "english": {
+        "host": "yingyu.core.xdf.cn",
+        "port": 80
+      },
+      "physics": {
+        "host": "wuli.core.xdf.cn",
+        "port": 80
+      },
+      "chemistry": {
+        "host": "huaxue.core.xdf.cn",
+        "port": 80
+      },
+      "biology": {
+        "host": "shengwu.core.xdf.cn",
+        "port": 80
+      },
+      "geography": {
+        "host": "dili.core.xdf.cn",
+        "port": 80
+      },
+      "polity": {
+        "host": "zhengzhi.core.xdf.cn",
+        "port": 80
+      },
+      "chinese": {
+        "host": "yuwen.core.xdf.cn",
+        "port": 80
+      },
+      "history": {
+        "host": "lishi.core.xdf.cn",
+        "port": 80
+      }
+    }
+  },
+  "test": {
+    "local": {
+      "math": {
+        "port": 4000,
+        "host": "testmath.core.xdf.cn"
+      },
+      "english": {
+        "host": "testenglish.core.xdf.cn",
+        "port": 4001
+      },
+      "physics": {
+        "port": 4000,
+        "host": "testmath.core.xdf.cn"
+      }
+    },
+    "proxy": {
+      "math": {
+        "port": 80,
+        "host": "testshuxue.core.xdf.cn"
+      },
+      "english": {
+        "host": "testyingyu.core.xdf.cn",
+        "port": 80
+      },
+      "physics": {
+        "port": 80,
+        "host": "testshuxue.core.xdf.cn"
+      }
+    }
+  }
+}
+

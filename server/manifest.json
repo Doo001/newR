@@ -1,0 +1,19 @@
+{
+  "main": {
+    "js": "/main.js",
+    "css": "/main.css"
+  },
+  "user": {
+    "js": "/user.js"
+  },
+  "portal": {
+    "js": "/portal.js"
+  },
+  "commons": {
+    "js": "/commons.js",
+    "css": "/commons.css"
+  },
+  "bootstrap": {
+    "js": "/webpack_bootstrap.js"
+  }
+}

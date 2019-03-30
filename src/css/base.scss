@@ -1,0 +1,527 @@
+body {
+    min-width: $min-page-width;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'PingFang SC','Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #d9d9d8;
+    font-size: 14px;
+}
+p {
+    margin: 0;
+}
+
+.main {
+    min-width: $min-page-width;
+    max-width: $max-page-width;
+    margin: auto;
+    //padding: 1.25em;
+    min-height: $page-main-min-height;
+    background: #f5f5f5;
+    position:relative;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: none;
+}
+
+.op-zone .btn {
+    margin: 1em 1.5em;
+}
+
+.opable {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.error {
+    color: red;
+}
+
+.label {
+    padding: .2em .3em;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.color-light {
+    color: #c3c3c3;
+}
+
+
+@mixin contextual-variant($state, $background, $color) {
+    .contextual-#{$state} {
+        color: $color;
+        background-color: $background;
+    }
+
+    //scss-lint:disable QualifyingElement
+    a.contextual-#{$state},
+    button.contextual-#{$state} {
+        color: $color;
+
+        &:hover, &:focus {
+            color: $color;
+            background-color: darken($background, 5%);
+        }
+
+        &.active {
+            color: #fff;
+            background-color: $color;
+            border-color: $color;
+        }
+    }
+    // scss-lint:enable QualifyingElement
+}
+
+@include contextual-variant(success, $state-success-bg, $state-success-text);
+@include contextual-variant(info, $state-info-bg, $state-info-text);
+@include contextual-variant(warning, $state-warning-bg, $state-warning-text);
+@include contextual-variant(danger, $state-danger-bg, $state-danger-text);
+
+#site-version-info {
+    color: #aaa;
+    font-size: .8em;
+
+    @media print {
+        display: none;
+    }
+}
+
+#page-footer {
+    display:none;
+    text-align: center;
+    bottom: 0px;
+    height: 6.429em;
+    background-color: #fff;
+    width: 100%;
+    color: #555;
+    z-index: 999;
+    padding-top: 2em;
+    .p2{
+        font-size: 10px;
+        color: #959595;
+    }
+    .p3{
+        margin-top: 12px;
+        font-size: 10px;
+        color: #959595;
+    }
+
+    @media print {
+        display: none;
+    }
+}
+
+#home-module-portals {
+    min-height:calc(100vh - 51px);
+    width:100%;
+    padding-top:66px;
+    text-align: center;
+    background-color:#efefef;
+    div.contain-main{
+        margin: 0px auto;
+        width:850px;
+        height:358px;
+        text-align: center;
+        background-color:#efefef;
+
+    }
+    .logo-main{
+        display:block;
+        width:408px;
+        height:472px;
+        background:url('img/logo@3xcopy@2x.png') no-repeat top right;
+        background-size:100%;
+    }
+    h1{
+        padding-left:20px;
+        margin:0px;
+        height:50px;
+        line-height:50px;
+        font-size:36px;
+        font-family:PingFangSC-Light;
+        font-weight:300;
+        color:rgba(63,59,58,1);
+    }
+    .margin-B{
+        margin-bottom:60px;
+    }
+    .module-portal {
+        cursor: pointer;
+        display: inline-block;
+        margin: 15PX 25PX;
+        font-size: 18PX;
+        font-weight:500;
+        color:rgba(63,59,58,1);
+        text-align: center;
+        vertical-align: middle;
+
+        transition: transform .1s;
+
+        //width:10.95em;
+        //height:3.29em;
+        width:230px;
+        height:69px;
+        line-height:69px;
+        background:rgba(255,228,165,1);
+        border-radius:4px;
+        border:1px solid rgba(250,191,0,1);
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+    }
+}
+
+#login-form {
+    max-width: 21.42em;;
+    margin: 3.3em auto 0 auto;
+    color: #555;
+
+    .form-row {
+        margin: .71em auto;
+    }
+
+    .form-controls {
+        text-align: right;
+    }
+
+    .btn {
+        width: 100%;
+        background: #4d77ee;
+        border-color: #3559be;
+        font-size: 14px;;
+        height: 2.71em;
+        margin-top: 1em;
+    }
+
+    .btn:hover {
+        background: #325ccf;
+        border-color: #3250a4;
+    }
+
+    .form-control {
+        height: 2.71em;
+    }
+
+    input[type="password"] {
+        color: #bebebe;
+    }
+
+    .forget-pass {
+        margin-top: 1.3em;
+        text-align: right;
+    }
+    .capacha {
+        position: relative;
+        .text {
+            width: 50%;
+            position: absolute;
+        }
+        img {
+            width: 50%;
+            position: absolute;
+            right: 0;
+        }
+        font-weight: normal;
+    }
+    .remember {
+        margin-top: 50px;
+    }
+}
+
+#login-page {
+    .login-header {
+        height: 22.85em;
+        background-color: #315ea3;
+        background-image: url('../img/login_bg.png');
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+    }
+
+    .logo-wrapper {
+        text-align: center;
+    }
+
+    .logo-wrapper img {
+        margin-top: 2.714em;
+    }
+
+    .sys-name-wrapper {
+        text-align: center;
+        margin-top: 4.28em;
+    }
+
+    .login-body {
+        padding-bottom: 5em;
+    }
+}
+
+.login-main {
+    min-width: 100%;
+    max-width: 100%;
+    margin: auto;
+    height: calc(100vh});
+    min-height: 687px;
+    background: #f4f5f8;
+}
+
+#page-header {
+
+    width: 100%;
+    color: #555;
+
+    #quantum-navbar{
+        background-color: RGBA(66, 63, 56, 1);
+    }
+    .navbar {
+        margin-bottom: 0em;
+        border-radius:1px;
+    }
+
+    .navbar-default {
+        background-color: rgb(66,63,56);
+        border: 0;
+        min-width: $min-page-width;
+        max-width: $max-page-width;
+        margin: 0 auto;
+
+    }
+
+    .navbar-brand {
+        font-size: 1em;
+        margin-left: -16px;
+        width: 200px;
+        height: 50px;
+        background-color: rgba(255,211,67,1);
+        background-image:url(img/logo1@2x.png);
+        background-repeat:no-repeat;
+        background-size:148px 30px;
+        background-position:26px 11px;
+    }
+
+    .navbar-nav li {
+        color:  #fff;
+        min-width: 6em;
+    }
+    .user li{
+        min-width: 4em;
+    }
+
+    .navbar-nav a {
+        padding-left: 2px;
+        padding-right: 2px;
+        font-size:14px;
+        font-family:PingFangSC-Regular;
+        color:rgba(204,204,204,1);
+    }
+
+    .navbar-nav .active a {
+        color: #FFD343;
+        font-size:16px;
+        font-family:PingFangSC-Medium;
+        background-color:rgb(65,63,55);
+    }
+
+    .navbar-nav li a {
+        color:rgba(164,163,164,1);
+        text-align: center;
+    }
+    .user-avatar{
+      min-width: 2em !important;
+    }
+    .user-avatar::before {
+        content: url("../../img/avatar.png");
+        display: inline-block;
+        margin-top: 1em;
+    }
+    .user-email a{
+      min-width: 1em !important;
+    }
+    .user-email i {
+        display: inline-block;
+        height: .8em;
+        border-right: 1px solid rgba(94,90,90,1);
+        padding-right: 1.28em;
+    }
+}
+
+
+@mixin table {
+    .table {
+        border: 1px solid #eaeaef;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 0em;
+    }
+
+    .table > thead > tr > th {
+        border-bottom: 1px solid #eaeaef;
+        height: 3.85em;
+        vertical-align: middle;
+        color: #555;
+        font-weight: normal;
+    }
+
+    .table > tbody > tr > td {
+        color: #555;
+        border-width: 0px;
+        height: 4em;
+        vertical-align: middle;
+    }
+
+    .table thead > tr > th:first-child {
+        padding-left: 2.57em;
+    }
+
+    .table tbody > tr > td:first-child {
+        padding-left: 2.57em;
+    }
+
+    .table tbody tr:nth-child(even) {
+        background: #f8f8fa;
+    }
+}
+
+@mixin search-panel($height: 6em) {
+    .search-panel {
+        height: $height;
+        border: 1px solid #eaeaef;
+        padding: 1.5em 2.571em;
+        background: #fff;
+        border-radius: 4px;
+    }
+}
+
+@mixin modal-dialog($width: 550px, $height: 200px, $top: 150px, $left: 30%) {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    position: fixed;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: $width;
+    height: $height;
+    top: $top;
+    left: $left;
+}
+.auxiliary {
+    margin-top: 10px;
+    background-color: $bg-color-highlight;
+}
+
+.auxiliary .difficulty,
+.auxiliary .ktags,
+.auxiliary .answer,
+.auxiliary .ans,
+.auxiliary .exp,
+.auxiliary .step {
+    //display: flex;
+    font-weight: normal;
+}
+
+.auxiliary .dt {
+    flex: 0 0 58px;
+    padding: 5px 0;
+    color: $base-color;
+    line-height: 28px;
+}
+
+.auxiliary .dd {
+    flex: 1 1 auto;
+    padding: 5px;
+    line-height: 28px;
+}
+
+.no-difficulty .auxiliary .difficulty,
+.no-ktags .auxiliary .ktags,
+.no-answer .auxiliary .answer,
+.no-exp .auxiliary .exp,
+.no-step .auxiliary .step {
+    display: none;
+}
+
+.auxiliary .ktags {
+    .ktag-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .ktag {
+        margin-bottom: 2px;
+        position: relative;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        letter-spacing: normal;
+        white-space: nowrap;
+    }
+}
+
+.auxiliary .difficulty-container {
+    margin-left: 0;
+    padding-top: 0;
+    line-height: 25px;
+}
+button[disabled], html input[disabled] {
+    cursor: default;
+    opacity: .65;
+}
+.rst__rowWrapper {
+    .rst__rowToolbar {
+        visibility: hidden;
+    }
+    &:hover {
+        .rst__rowToolbar {
+            visibility: visible;
+        }
+    }
+}
+
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+
+}
+.rc-select-dropdown {
+    z-index: 9999 !important;
+}
+.saveBtn {
+    width: 100px;
+    height: 36px;
+    float:right;
+    background: rgba(255, 211, 67, 1);
+    border-radius: 2px;
+    font-size: 15px;
+    font-family: PingFangSC-Regular;
+    color: rgba(120, 120, 120, 1);
+    border: 0;
+}
+.saveBtn:hover{
+    background:rgba(255,211,67,1);
+    box-shadow:0px 2px 5px 0px rgba(227,174,0,1);
+    color:rgba(120,120,120,1);
+}
+.saveBtn:active{
+    background:rgba(255,193,67,1);
+}
+.rc-select-dropdown-menu {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+*::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+
+*::-webkit-scrollbar-thumb{
+    height: 10px;
+    width: 5px;
+    background: #A6AAB3;
+    border-radius: 3px;
+}
+a, button {
+    cursor: pointer;
+}

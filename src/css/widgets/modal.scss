@@ -1,0 +1,16 @@
+#dialog-root {
+    .modal-dialog {
+        &.modal-big {
+            width: 90%;
+            margin: 5em auto;
+        }
+    }
+
+    .modal-body {
+        overflow-y: visible;
+    }
+
+    .modal-footer {
+        text-align: center;
+    }
+}

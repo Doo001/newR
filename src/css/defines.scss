@@ -1,0 +1,82 @@
+/* 常量定义及公共函数 */
+
+$width-5s: 320px;
+$width-6s: 375px;
+$width-6splus: 414px;
+
+$min-page-width: 1100px;
+$max-page-width: 1400px;
+
+$page-header-height: 52px;
+$page-footer-height: 90px;
+$page-main-min-height: calc(100vh - #{$page-header-height}});
+$page-main-min-content-height: calc(100vh - #{$page-header-height} - #{$page-footer-height} - 35px);
+
+// copy from bootstrap
+$state-success-text:             #3c763d !default;
+$state-success-bg:               #dff0d8 !default;
+$state-success-border-color:     darken($state-success-bg, 5%) !default;
+
+$state-info-text:                #31708f !default;
+$state-info-bg:                  #d9edf7 !default;
+$state-info-border-color:        darken($state-info-bg, 7%) !default;
+
+$state-warning-text:             #8a6d3b !default;
+$state-warning-bg:               #fcf8e3 !default;
+$mark-bg:                        $state-warning-bg !default;
+$state-warning-border-color:     darken($state-warning-bg, 5%) !default;
+
+$state-danger-text:              #a94442 !default;
+$state-danger-bg:                #f2dede !default;
+$state-danger-border-color:      darken($state-danger-bg, 5%) !default;
+$lighter-color: #888;  // 弱化的字色
+$font-color-primary: #555;                      // 字体基本颜色
+$font-color-secondary: #898f99;
+$font-color-tertiary: #344257;
+$font-color-warning: #ff8111;
+$font-color-highlight: #0f86e5;
+$font-color-highlight-hover: #1166be;
+$font-color-header: $font-color-secondary;      // 列表头，标签头字体颜色
+$font-color-nav: $font-color-tertiary;          // 右边导航字体颜色
+$font-color-weak: #98a0ae;
+// 常用颜色值
+$base-color: #555;
+$base-font-size: 14px;
+$lighter-color: #888;
+$highlight-color: #3a81ff;
+$highlight-border-color: #1e59ee;
+
+$base-bg-color: #fff;
+$highlight-bg-color: #f8f8f8;
+
+$base-border-color: #eaeaef;
+
+$primary-color: $base-bg-color;
+$primary-bg-color: $highlight-color;
+$primary-highlight-bg-color: $primary-bg-color;
+
+$warning-bg-color: #ffe6e1;
+
+// 常用颜色值
+$color-blue: #2196f3;
+$color-orange: #fd9e00;
+// border 颜色值
+$border-color-primary: #deecf7;
+$border-color-secondary: $color-blue;
+$border-color-focus: $color-blue;               // 输入框选中的边框色
+$border-color-modal: #cedde7;                   // 弹窗边框颜色值
+$border-color-modal-shadow: #dce3ef;            // 弹窗边框的阴影
+$border-color-light: #ffe2b2;
+
+// background 颜色值
+$bg-color-primary: #fff;
+$bg-color-secondary: #f3faff;
+$bg-color-page: #f8fafc;                        // 页面的背景色
+$bg-color-header: $bg-color-secondary;          // 列表头背景色
+$bg-color-nav: #e6effc;                         // 右边导航背景色
+$bg-color-list-hover: #f1f9fc;                  // 列表每项hover颜色值
+$bg-color-active: $color-blue;                  // 活动状态的背景色
+$bg-color-warning: $color-orange;
+$bg-color-highlight: $bg-color-secondary;
+$bg-color-light: #fff5e5;
+$bg-color-weak: #f9fafc;

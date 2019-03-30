@@ -1,0 +1,35 @@
+.formula-icon {
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 4px 6px;
+  border-radius: 0 2px 2px 0;
+  border: 1px solid #a6a6a6;
+  box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 0 2px rgba(255,255,255,.15) inset, 0 1px 0 rgba(255,255,255,.15) inset;
+  background-color: #e4e4e4;
+  background-image: linear-gradient(to bottom,#fff,#e4e4e4);
+}
+.formula-editorWrap {
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  height: 338px;
+  width: 580px;
+  display: none;
+  z-index: 9996;
+  &.show {
+    display: block;
+  }
+  header {
+    position: relative;
+    line-height: 1.45;
+    .formula-close {
+      position: absolute;
+      right: 10px;
+      z-index: 999;
+    }
+  }
+}
+.formula-editor {
+  width: 568px;
+  height: 300px
+}

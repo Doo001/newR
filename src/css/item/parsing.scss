@@ -1,0 +1,59 @@
+#item-parsing {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    stem, opt, .auxiliary {
+        border: 1px dashed grey;
+        display: block;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .btn-group-justified:nth-of-type(2) div{
+        float: left;
+        width: 95px;
+    }
+
+    subq{
+        word-break: break-all;
+    }
+
+    .item-preview-pane {
+        flex: 1 1 50%;
+        margin-right: 2em;
+    }
+
+    .item-input-pane {
+        flex: 1 1 50%;
+    }
+
+    .form-horizontal{
+        padding-top:20px;
+    }
+
+    .item-input-pane textarea {
+        width: 100%;
+    }
+
+    .item-input-pane .item-input-wrapper {
+        margin: 2em auto;
+    }
+
+    .item-extra-switcher {
+        margin: 1em auto;
+    }
+
+    .item-extra-switcher .btn.active {
+        background-color: #337ab7;
+    }
+
+    .op-zone .btn[data-action=parse] .glyphicon-ok {
+        color: green;
+    }
+
+    .parsing-note {
+        margin: 1em auto 2em auto;
+        color: #ababab;
+    }
+}

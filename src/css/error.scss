@@ -1,0 +1,38 @@
+#error-page {
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .code {
+            font-size: 45px;
+            color: #e6e6e6;
+            margin-top: 44px;
+            margin-bottom: 13px;
+        }
+
+        .hint {
+            font-size: 17px;
+            color: #888;
+        }
+
+        .actions {
+            width: 337px;
+            display: flex;
+            margin: 38px 0 63px 0;
+            justify-content: space-between;
+        }
+
+        button {
+            margin-left: 6px;
+            border: 1px solid #5796ff;
+            border-radius: 4px;
+            color: #5796ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 42px;
+            width: 200px;
+        }
+    }
+}
